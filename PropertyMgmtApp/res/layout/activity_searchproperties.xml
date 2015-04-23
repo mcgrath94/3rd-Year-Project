@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#788cb3"
+    tools:context=".SearchProperties" >
+
+    <Button
+        android:id="@+id/btnModifyProp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtPropNotes"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="42dp"
+        android:text="Modify" />
+
+    <Button
+        android:id="@+id/btnDeleteProp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnModifyProp"
+        android:layout_alignBottom="@+id/btnModifyProp"
+        android:layout_alignRight="@+id/btnFindProp"
+        android:layout_marginRight="34dp"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/btnFindProp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btnViewProps"
+        android:layout_marginRight="16dp"
+        android:text="Find" />
+
+    <Button
+        android:id="@+id/btnViewProps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="View All" />
+
+    <EditText
+        android:id="@+id/edtRent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtOccupants"
+        android:layout_below="@+id/edtOccupants"
+        android:ems="10"
+        android:hint="Rent"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtOccupants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etSearchProp"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="Occupants"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtPropNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtRent"
+        android:layout_below="@+id/edtRent"
+        android:ems="10"
+        android:hint="Notes"
+        android:inputType="textMultiLine" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edtPropAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtOccupants"
+        android:layout_alignLeft="@+id/edtOccupants"
+        android:ems="10"
+        android:hint="Property address"
+        android:inputType="textPostalAddress" />
+
+    <EditText
+        android:id="@+id/edtFindId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnFindProp"
+        android:layout_toLeftOf="@+id/btnFindProp"
+        android:hint="Enter ID"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/edtPropName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edtPropAddr"
+        android:layout_alignRight="@+id/edtFindId"
+        android:ems="10"
+        android:hint="Property name" />
+
+</RelativeLayout>

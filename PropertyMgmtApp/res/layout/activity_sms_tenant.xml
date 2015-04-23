@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#788cb3"
+    tools:context=".SmsTenant" >
+
+    <Button
+        android:id="@+id/btnSendTenantSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="Send SMS" />
+
+    <Button
+        android:id="@+id/btnCancelTenantSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Cancel" />
+
+    <EditText
+        android:id="@+id/etTenatSmsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSendTenantSms"
+        android:layout_alignLeft="@+id/etTenantSmsMobile"
+        android:layout_alignRight="@+id/btnCancelTenantSms"
+        android:layout_below="@+id/etTenantSmsMobile"
+        android:ems="10"
+        android:hint="Enter text here"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/btnSmsGetTenant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/etTenantSmsId"
+        android:text="Go" />
+
+    <EditText
+        android:id="@+id/etTenantSmsId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/btnSmsViewTenants"
+        android:ems="10"
+        android:hint="Enter tenant Id" />
+
+    <Button
+        android:id="@+id/btnSmsViewTenants"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/searchtenant_launcher" />
+
+    <EditText
+        android:id="@+id/etTenantSmsMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnSmsViewTenants"
+        android:layout_below="@+id/btnSmsGetTenant"
+        android:layout_marginTop="39dp"
+        android:ems="10"
+        android:hint="Number will appear here"
+        android:inputType="phone" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnSmsViewTenants"
+        android:layout_below="@+id/btnSmsViewTenants"
+        android:text="View All"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

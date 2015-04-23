@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.propertymgmtapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="18" />
+    
+      <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.propertymgmtapp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.CalendarActivity"
+            android:label="@string/title_activity_calendar"
+            android:parentActivityName="com.example.propertymgmtapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.propertymgmtapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.MyProperties"
+            android:label="@string/title_activity_my_properties"
+            android:parentActivityName="com.example.propertymgmtapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.propertymgmtapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.About"
+            android:label="@string/title_activity_about"
+            android:parentActivityName="com.example.propertymgmtapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.propertymgmtapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.Calendar"
+            android:label="@string/title_activity_calendar"
+            android:parentActivityName="com.example.propertymgmtapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.propertymgmtapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.AddProperty"
+            android:label="@string/title_activity_add_property" >
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.ContractorsActivity"
+            android:label="@string/title_activity_contractors"
+            android:parentActivityName="com.example.propertymgmtapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.propertymgmtapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.SearchPropertys"
+            android:label="@string/title_activity_search_propertys"
+            android:parentActivityName="com.example.propertymgmtapp.MyProperties" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.propertymgmtapp.MyProperties" />
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.SearchProperties"
+            android:label="@string/title_activity_search_properties" >
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.Tenants"
+            android:label="@string/title_activity_tenants"
+            android:parentActivityName="com.example.propertymgmtapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.propertymgmtapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.AddTenant"
+            android:label="@string/title_activity_add_tenant" >
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.Contractor"
+            android:label="@string/title_activity_contractor" >
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.AddContractor"
+            android:label="@string/title_activity_add_contractor" >
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.Help"
+            android:label="@string/title_activity_help" >
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.SearchTenants"
+            android:label="@string/title_activity_search_tenants"
+            android:parentActivityName="com.example.propertymgmtapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.propertymgmtapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.propertymgmtapp.SmsTenant"
+            android:label="@string/title_activity_sms_tenant" >
+        </activity>
+    </application>
+
+</manifest>
